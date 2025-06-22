@@ -1,0 +1,309 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        50% 50% at 100% 0,
+        #f2f2f2 0% 5%,
+        #ffffff 6% 15%,
+        #f2f2f2 16% 25%,
+        #ffffff 26% 35%,
+        #f2f2f2 36% 45%,
+        #ffffff 46% 55%,
+        #f2f2f2 56% 65%,
+        #ffffff 66% 75%,
+        #f2f2f2 76% 85%,
+        #ffffff 86% 95%,
+        #0000 96%
+        ),
+        radial-gradient(
+        50% 50% at 0 100%,
+        #f2f2f2 0% 5%,
+        #ffffff 6% 15%,
+        #f2f2f2 16% 25%,
+        #ffffff 26% 35%,
+        #f2f2f2 36% 45%,
+        #ffffff 46% 55%,
+        #f2f2f2 56% 65%,
+        #ffffff 66% 75%,
+        #f2f2f2 76% 85%,
+        #ffffff 86% 95%,
+        #0000 96%
+        ),
+        radial-gradient(
+        50% 50%,
+        #f2f2f2 0% 5%,
+        #ffffff 6% 15%,
+        #f2f2f2 16% 25%,
+        #ffffff 26% 35%,
+        #f2f2f2 36% 45%,
+        #ffffff 46% 55%,
+        #f2f2f2 56% 65%,
+        #ffffff 66% 75%,
+        #f2f2f2 76% 85%,
+        #ffffff 86% 95%,
+        #0000 96%
+        ),
+        radial-gradient(
+            50% 50%,
+            #f2f2f2 0% 5%,
+            #ffffff 6% 15%,
+            #f2f2f2 16% 25%,
+            #ffffff 26% 35%,
+            #f2f2f2 36% 45%,
+            #ffffff 46% 55%,
+            #f2f2f2 56% 65%,
+            #ffffff 66% 75%,
+            #f2f2f2 76% 85%,
+            #ffffff 86% 95%,
+            #0000 96%
+        )
+        38px 38px;
+    background-size: 76px 76px;
+    background-color: #ca3f3f;
+}
+
+
+main, .container-fluid {
+    flex: 1 0 auto;
+}
+
+.banner-header {
+    background-image: url('https://as1.ftcdn.net/jpg/05/43/05/36/1000_F_543053683_8El6EbHjxlTrLIHUfHIVnoUWqJlivKq5.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.banner-header img {
+    width: 300px;
+    height: 130px;
+    object-fit: cover;
+    border: 3px solid #000;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.banner-header img:hover {
+    transform: scale(1.1);
+}
+
+.categorias-nav {
+    background-color: #fff;
+    padding: 1rem 0;
+    border-top: 1px solid rgb(62, 61, 61);;
+    border-bottom: 1px solid rgb(62, 61, 61);;
+    text-align: center;
+    --s: 100px; 
+    --c1: rgb(69, 68, 68);
+    --c2: #272728;
+
+    --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+      var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+      var(--c1) 76% 84%, var(--c2) 86% 94%;
+    background: radial-gradient(
+        100% 100% at 100% 0,
+        var(--c1) 4%,
+        var(--_g),
+        #0008 96%,
+        #0000
+      ),
+      radial-gradient(
+          100% 100% at 0 100%,
+          #0000,
+          #0008 4%,
+          var(--_g),
+          var(--c1) 96%
+        )
+        var(--c1);
+    background-size: var(--s) var(--s);
+}
+
+.fondoCategorias{
+    background-color: rgb(62, 61, 61);
+}
+
+.categorias-nav a {
+    margin: 0 0.5rem;
+    font-family: 'Aharoni', sans-serif;
+}
+
+.btn:hover{
+   transform: scale(1.1);
+}
+
+.circle {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.circle img:hover {
+    transform: scale(1.1);
+}
+
+.btn-image {
+    border: none;
+    background: transparent;
+    border: 3px solid rgb(67, 64, 64);
+}
+
+.btn-image:focus {
+    outline: 2px solid blue;
+}
+
+.footer-custom {
+    flex-shrink: 0;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.fondodestacados{
+    background-color: rgb(29, 29, 29);
+}
+
+.fondoCategorias{
+    background-color: rgb(62, 61, 61);
+}
+
+.col-md-8.d-flex.align-items-center.justify-content-center p {
+    padding: 1rem 2rem; 
+}
+
+.text-justify5 {
+    text-align: justify !important;
+}
+
+.col-md-4 .no-image img {
+  width: 80%; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.footerp p{
+  color: white;
+}
+
+ @media (max-width: 576px) {
+      .circle img {
+        width: 100px !important;
+        height: 100px !important;
+        object-fit: cover;
+      }
+      .circle {
+        width: 100px !important;
+        height: 100px !important;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .categorias-nav a {
+        padding: 8px 10px !important;
+        font-size: 0.8rem !important;
+        margin-bottom: 5px;
+        display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container-fluid.mb-4 .row {
+        flex-direction: column;
+      }
+      .container-fluid.mb-4 .col-md-4,
+      .container-fluid.mb-4 .col-md-8 {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+      .container-fluid.mb-4 .col-md-8 {
+        margin-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .social-icon {
+        width: 35px !important;
+        height: 35px !important;
+      }
+    }
+
+    p{
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    footer p{
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+@media (min-width: 768px) {
+  .circle {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (min-width: 992px) {
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+main h1{
+  text-align: center;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+}

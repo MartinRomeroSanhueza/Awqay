@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AWQAY</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="modal.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<!--Header-->
+
+<header class="banner-header">
+    <a href="principal.html">
+        <img src="recursos_decorativos/logo.jpg" alt="Logo" />
+    </a>
+</header>
+
+<!--Categorias-->
+
+<nav class="fondoCategorias categorias-nav">
+    <a href="carteras.html" class="btn btn-light border rounded shadow-sm px-3 py-2 fw-bold text-uppercase">Carteras</a>
+    <a href="riñoneras.html" class="btn btn-light border rounded shadow-sm px-3 py-2 fw-bold text-uppercase">Bananos</a>
+    <a href="mochila.html" class="btn btn-light border rounded shadow-sm px-3 py-2 fw-bold text-uppercase">Mochilas</a>
+    <a href="chaquetas.html" class="btn btn-light border rounded shadow-sm px-3 py-2 fw-bold text-uppercase">Chaquetas</a>
+    <a href="monederos.html" class="btn btn-light border rounded shadow-sm px-3 py-2 fw-bold text-uppercase">Monederos y Tarjeteros</a>
+    <a href="estuches.html" class="btn btn-light border rounded shadow-sm px-3 py-2 fw-bold text-uppercase">Estuches</a>
+    <a href="accesorios.html" class="btn btn-light border rounded shadow-sm px-3 py-2 fw-bold text-uppercase">Accesorios</a>
+</nav>
+
+<!--Productos-->
+
+<main>
+<div id="carouselDestacados" class="carousel slide py-4 fondodestacados" data-bs-ride="carousel">
+    <h1>PRODUCTOS DESTACADOS</h1>
+    <div class="carousel-inner text-center">
+    <div class="carousel-item active">
+        <div class="d-flex justify-content-center gap-3">
+
+          <button class="circle btn-image open-modal"
+              data-title="Chaqueta Awqay"
+              data-desc1="- Hecha con reutilización textil en su mayoría"
+              data-desc2="- Talla M"
+              data-desc3="- pieza única "
+              data-img="awqay/chaquetas/1 (1).jpg"
+              data-price="$68000"
+              data-thumb1="awqay/chaquetas/1 (1).jpg"
+              data-thumb2="awqay/chaquetas/1 (2).jpg"
+              data-thumb3="awqay/chaquetas/1 (3).jpg">
+              <img src="awqay/chaquetas/1 (1).jpg" alt="Imagen 1" />
+          </button>
+
+          <button class="circle btn-image open-modal"
+              data-title="Cartera Awqay"
+              data-desc1="- Multifunción, strap ajustable para usarla como banano, cartera o bandolera"
+              data-desc2="- Exterior hecho con reutilización textil"
+              data-desc3="- Forrada con tela Oxford para mayor resistencia y repelencia al agua"
+              data-img="awqay/carteras/6 (1).jpg"
+              data-price="$20000"
+              data-thumb1="awqay/carteras/6 (1).jpg"
+              data-thumb2="awqay/carteras/6 (2).jpg"
+              data-thumb3="awqay/carteras/6 (3).jpg">
+              <img src="awqay/carteras/6 (1).jpg" alt="Imagen 1" />
+          </button>
+
+          <button class="circle btn-image open-modal"
+              data-title="Banano Awqay"
+              data-desc1="- Hecho con reutilización textil"
+              data-desc2="- Forrado con tela repelente al agua"
+              data-desc3="- Reforzado con tela Oxford para mas resistencia"
+              data-price="$18000"
+              data-img="awqay/bananos/banano 1.jpg"
+              data-thumb1="awqay/bananos/banano 1.jpg"
+              data-thumb2="awqay/bananos/banano 2.jpg"
+              data-thumb3="awqay/bananos/banano 3.jpg">
+              <img src="awqay/bananos/banano 1.jpg" alt="Imagen 1" />
+          </button>
+          </div>
+      </div>
+
+      <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-3">
+
+          <button class="circle btn-image open-modal"
+              data-title="Colets Awqay"
+              data-desc1="- Piezas únicas"
+              data-desc2="- Hechos a partir de reutilización textil"
+              data-desc3="- set dos colet"
+              data-img="awqay/colets/16 (1).jpg"
+              data-price="$4000"
+              data-thumb1="awqay/colets/16 (1).jpg"
+              data-thumb2="awqay/colets/16 (2).jpg"
+              data-thumb3="awqay/colets/16 (1).jpg">
+              <img src="awqay/colets/16 (1).jpg" alt="Imagen 1" />
+          </button>
+
+          <button class="circle btn-image open-modal"
+              data-title="Bandana Awqay"
+              data-desc1="- Exterior hecho con reutilización textil"
+              data-desc2="- Forrado con polar "
+              data-desc3="- Broche metálico "
+              data-img="awqay/bandanas/mandana 1 (1).jpg"
+              data-price="$8000"
+              data-thumb1="awqay/bandanas/mandana 1 (1).jpg"
+              data-thumb2="awqay/bandanas/mandana 1 (2).jpg"
+              data-thumb3="awqay/bandanas/mandana 1 (3).jpg">
+              <img src="awqay/bandanas/mandana 1 (1).jpg" alt="Imagen 1" />
+          </button>
+
+          <button class="circle btn-image open-modal"
+              data-title="Mochila Awqay"
+              data-desc1="- Exterior hecho a partir de reutilización textil"
+              data-desc2="- Forrada y reforzada con tela Oxford "
+              data-desc3="- Resistente y repelente al agua"
+              data-desc4="- Acolchada en su espalda y asas"
+              data-img="awqay/mochilas/2 (1).jpg"
+              data-price="$42000"
+              data-thumb1="awqay/mochilas/2 (1).jpg"
+              data-thumb2="awqay/mochilas/2 (2).jpg"
+              data-thumb3="awqay/mochilas/2 (3).jpg">
+              <img src="awqay/mochilas/2 (1).jpg" alt="Imagen 1" />
+          </button>
+          </div>
+    </div>
+</div>
+
+<!--Carrusel Boton-->
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselDestacados" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
+
+    <br><br>
+
+<div class="container-fluid mb-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="no-image">
+                <img src="awqay/fondo.jpg" alt="Producto destacado" />
+            </div>
+        </div>
+        
+        <div class="col-md-8 d-flex flex-column align-items-center justify-content-center px-3 px-md-0">
+            <h2 class="text-success text-center">🌿 Awqay Revolución Textil 🌿</h2>
+            <h4 class="text-muted text-center mb-4">Diseño consciente, moda con historia.</h4>
+
+            <p class="text-justify fs-5">
+                En <strong>Awqay Revolución Textil</strong> transformamos el pasado en futuro. Cada mochila, banano y chaqueta que creamos
+                nace de <strong>telas reutilizadas</strong>, recuperadas con respeto y creatividad, para dar vida a
+                <strong>piezas únicas y sostenibles</strong>.
+
+                Nuestra misión es demostrar que <strong>la moda puede ser responsable</strong>, sin perder estilo ni identidad.
+                Apostamos por una <strong>revolución textil</strong> que honre el planeta, valore lo hecho a mano y celebre la diversidad de materiales con historia.
+
+                Únete a este movimiento donde <strong>la reutilización es resistencia</strong>, y el <strong>diseño, una forma de transformación</strong>.
+            </p>
+          </div>
+        </div>
+    </div>
+</main>
+
+<!--Footer-->
+
+<footer class="container-fluid py-4 mt-4" style="background-color: rgb(29, 29, 29); color: white;">
+    <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+            <div class="col-12 col-md-2 mb-3 mb-md-0 d-flex justify-content-center">
+                <a href="principal.html" class="d-block" style="width: 60px; height: 60px;">
+                    <img src="recursos_decorativos/logo.jpg" alt="Logo Footer" class="rounded-circle" style="width: 100%; height: 100%; object-fit: cover;">
+                </a>
+            </div>
+
+            <div class="col-12 col-md-7 mb-3 mb-md-0">
+                <div>
+                     <p class="text-center">© 2025 Awqay, Inc</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end gap-3 mt-3 mt-md-0">
+
+              <div style="width: 50px; height: 50px;">
+                  <a href="https://wa.me/56991009287?text=Hola%2C%20quiero%20más%20información" target="_blank">
+                      <img src="https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN" alt="Instagram" width="32" class="rounded-circle w-100 h-100">
+                  </a>
+              </div>
+
+              <div style="width: 50px; height: 50px;">
+                  <a href="https://www.instagram.com/awqay_/" target="_blank">
+                      <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/facebook-logo-design-template-14a38c75b25fe8a11e30a7202e6846cc_screen.jpg?ts=1616956224" alt="Instagram" width="32" class="rounded-circle w-100 h-100">
+                  </a>
+              </div>
+
+              <div style="width: 50px; height: 50px;">
+                  <a href="https://www.instagram.com/awqay_/" target="_blank">
+                      <img src="https://www.laxmedellin.com/uploads/newsarticle/f8130f81dac24558b9cb0a8514a1d417/instagram.jpg" alt="Instagram" width="32" class="rounded-circle w-100 h-100">
+                  </a>
+              </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Modal-->
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+
+          <div class="modal-body">
+              <div class="img-section">
+                  <img id="mainImg" src="" alt="Producto" class="main-img">
+                  <div class="thumbs">
+                      <img id="thumb1" src="" class="thumb" onclick="changeMainImg(this)">
+                      <img id="thumb2" src="" class="thumb" onclick="changeMainImg(this)">
+                      <img id="thumb3" src="" class="thumb" onclick="changeMainImg(this)">
+                  </div>
+              </div>
+
+              <div class="info-section">
+                  <h2 id="modalTitle"></h2>
+                  <p id="modalDesc1"></p>
+                  <p id="modalDesc2"></p>
+                  <p id="modalDesc3"></p>
+                  <p id="modalDesc4"></p>
+                  <h3 id="modalPrice"></h3>
+              </div>
+
+              <div class="redes d-flex justify-content-center gap-3">
+                  <a href="https://wa.me/56991009287?text=Hola%2C%20quiero%20más%20información" target="_blank">
+                      <img src="https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN" alt="WhatsApp" width="32">
+                  </a>
+
+                  <a href="https://facebook.com/tuPagina" target="_blank">
+                      <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/facebook-logo-design-template-14a38c75b25fe8a11e30a7202e6846cc_screen.jpg?ts=1616956224" alt="Facebook" width="32">
+                  </a>
+
+                  <a href="https://www.instagram.com/awqay_/" target="_blank">
+                      <img src="https://www.laxmedellin.com/uploads/newsarticle/f8130f81dac24558b9cb0a8514a1d417/instagram.jpg" alt="Instagram" width="32">
+                  </a>
+              </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
